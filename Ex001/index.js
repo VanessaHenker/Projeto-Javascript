@@ -1,13 +1,19 @@
 "use strict"
 
-/* let nome= "Vanessa"
-let sobrenome = "Silva"
+  let nome= "Vanessa"
+  nome= "Joana"
+  let sobrenome = "Silva"
 
-console.log(nome)
-console.log(sobrenome) */
+  console.log(nome)
+  console.log(sobrenome) 
 
+  const curso = "Javascript"
+  //curso = "html"
+
+  console.log(curso)
+/* var nome = "Vanessa"
 function teste(){
-  var nome = "Vanessa"
+
 
   if(true){
   console.log("Dentro do IF do teste: " = nome)
@@ -18,4 +24,4 @@ function teste(){
 
 teste()
 
-console.log("Fora do teste: " + nome)
+console.log("Fora do teste: " + nome) */
