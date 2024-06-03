@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Somando numeros</title>
+  <style>
+    body{
+      font: normal 20pt arial;
+    }
+    input{
+      font: normal 20pt arial;
+    }
+  </style>
 </head>
 <body>
   <h1>Somando valores</h1>
@@ -17,9 +25,17 @@
       var tn2 = window.document.getElementById('txtn2')
       var res = window.document.getElementById('res')
       var n1 = Number(tn1.value)
-      var n2 =Number(tn2.value)
-      var s = n1 + n2
-      res.innerHTML = `A soma entre ${n1} e ${n2} é: ${s}`
+      var n2 = Number(tn2.value)
+    
+      if(n1 < 0 || n2 < 0){
+       //console.log("teste")
+       res.innerHTML = `Tente novamente`
+      }
+      else{
+        var s = n1 + n2
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a: ${s}`
+      }
+      
     }
   </script>
 </body>
