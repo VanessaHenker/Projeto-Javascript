@@ -25,12 +25,17 @@ function calcular(){
   var res = window.document.querySelector('div#res')
   var vel = Number(txt.value)
 
-  res.innerHTML = `Você quer ${vel} passos`
-
   var cont = 0
 
-  while(cont < value){
-    res.innerHTML = `<p>Passo ${vel} </p>`
+  if(vel > 0){
+    res.innerHTML = `Você quer ${vel} passos`
+  }
+  else{
+    res.innerHTML = 'Tente novamente com numeros positivos'
+  }
+
+  while(cont < vel){
+    res.innerHTML += `<p>Passo ${cont} </p>`
     cont++
   }
 }
