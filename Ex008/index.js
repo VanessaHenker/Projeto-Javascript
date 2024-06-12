@@ -25,7 +25,7 @@ function calcular(){
   var res = window.document.querySelector('div#res')
   var vel = Number(txt.value)
 
-  var cont = 0
+  var cont = 1
 
   if(vel > 0){
     res.innerHTML = `Você quer ${vel} passos`
@@ -34,7 +34,7 @@ function calcular(){
     res.innerHTML = 'Tente novamente com numeros positivos'
   }
 
-  while(cont < vel){
+  while(cont <= vel){
     res.innerHTML += `<p>Passo ${cont} </p>`
     cont++
   }
