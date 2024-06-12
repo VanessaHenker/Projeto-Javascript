@@ -9,7 +9,7 @@ console.log('Diriga sempre com um cinto de segurança') */
 
 function calcular(){
   var txtv = window.document.querySelector('input#txtvel')
-  var res = window.document.querySelector('div#res')
+  
   var vel = Number(txtv.value)
   res.innerHTML = `<p> Sua velocidade atual é de <strong>${vel}km/hr</strong></p>`
 
