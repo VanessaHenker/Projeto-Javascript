@@ -11,9 +11,8 @@ if(idade < 16){
 
 //Estrutura while
 
-var cont = 0
+var cont = 0;
 
 while(cont < 6){
   console.log('Tudo bem?')
-  cont++
 }
