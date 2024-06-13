@@ -38,4 +38,5 @@ function calcular(){
     res.innerHTML += `<p>Passo ${cont} </p>`
     cont++
   }
+  console.log('FIMM')
 }
