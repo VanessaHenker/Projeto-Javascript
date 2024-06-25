@@ -7,8 +7,6 @@ num.sort()
 num.push()
 
 */
-
-
 console.log('Vai começar..')
 var teste = [5]
 //var teste = [5,6,7] - exemplo
