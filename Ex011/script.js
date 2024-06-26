@@ -13,17 +13,15 @@ let currentTime = hours + ':' + minutes + ':' + seconds;
 console.log('Horário atual: ' + currentTime);
 
 var hora = window.document.getElementById('hora-atual')
-var imagemDia = window.document.getElementById('imgDia')
+let img = 'image-tarde.jpg';
 
-  if(hours >= 6 && hours < 12){
-    console.log('Bom dia: ');
-    hora.innerHTML = `Agora são ${hours}:${minutes}`
+  if(hours < 12){
+    hora.innerHTML = `Bom dia, agora são ${hours}:${minutes}`
   }
-  if(hours >= 12 && hours < 18){
-    console.log('Boa tarde: ');
-    hora.innerHTML = `Agora são ${hours}:${minutes}`
+  if(hours >= 12){
+    hora.innerHTML = `Boa tarde, agora são ${hours}:${minutes}`
+    document.getElementById('imgDia').innerHTML = `<img src="${img}"`
   }
-  else{
-    console.log('Boa noite: ');
-    hora.innerHTML = `Agora são ${hours}:${minutes}`
+  if(hours > 17 || hours <= 4){
+    hora.innerHTML = `Boa noite, agora são ${hours}:${minutes}`
   }
