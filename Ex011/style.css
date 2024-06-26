@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(250, 207, 207);
+  padding: 10rem;
+
+}
+
+.conteudo-principal{
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:  #ecf0f1;
+  background-color: antiquewhite;
+}
