@@ -12,6 +12,8 @@ seconds = seconds < 10 ? '0' + seconds : seconds;
 let currentTime = hours + ':' + minutes + ':' + seconds;
 console.log('Horário atual: ' + currentTime);
 
+var teste =  window.document.getElementsByTagName('p')[0]
+
   if(hours >= 6 && hours < 12){
     console.log('Bom dia: ');
   }
