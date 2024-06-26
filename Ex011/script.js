@@ -12,14 +12,18 @@ seconds = seconds < 10 ? '0' + seconds : seconds;
 let currentTime = hours + ':' + minutes + ':' + seconds;
 console.log('Horário atual: ' + currentTime);
 
-var teste =  window.document.getElementsByTagName('p')[0]
+var hora = window.document.getElementById('hora-atual')
+var imagemDia = window.document.getElementById('imgDia')
 
   if(hours >= 6 && hours < 12){
     console.log('Bom dia: ');
+    hora.innerHTML = `Agora são ${hours}:${minutes}`
   }
   if(hours >= 12 && hours < 18){
     console.log('Boa tarde: ');
+    hora.innerHTML = `Agora são ${hours}:${minutes}`
   }
   else{
     console.log('Boa noite: ');
+    hora.innerHTML = `Agora são ${hours}:${minutes}`
   }
