@@ -6,14 +6,20 @@
 
 body{
   background-color: rgb(250, 207, 207);
-  padding: 10rem;
-
 }
 
 .conteudo-principal{
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+.conteudo{
+  background-color: blueviolet;
+  border-radius: 15px;
+  max-width: 460px;
+  height: 70%;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color:  #ecf0f1;
-  background-color: antiquewhite;
+  text-align: center;
 }
