@@ -4,17 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head> 
 <body>
-  <header>
+  <header class="conteudo-cabecalho">
     <h1>Verificador de idade</h1>
   </header>
 
-  <section>
-    <p>Ano de Nascimento: <input type="number" name="n1" id="n1"></p>
-    <p>Sexo: <input type="radio">M
+  <section class="conteudo-principal">
+    <div class="conteudo-dados">
+      <p>Ano de Nascimento: <input type="number" name="n1" id="n1"></p>
+      <p class="sexo">Sexo: <input type="radio">M
       <input type="radio">F</p>
-    <input type="button" value="verificar" onclick="calcular()">
+      <input class="sexo" type="button" value="verificar" onclick="calcular()">
+    </div>
+
+    <div class="conteudo-imagem">
+      <img class="detalhes-img" src="" alt="imagem">
+    </div>
+  
   </section>
+
+  <footer>
+    <p>curso em video</p>
+  </footer>
 </body>
 </html>
