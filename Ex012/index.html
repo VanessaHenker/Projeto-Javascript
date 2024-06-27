@@ -6,16 +6,6 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head> 
-  <script>
-  function calcular(){
-  var ano = window.document.getElementById('n1')
-  var res = window.document.getElementById('res')
-  var n1 = Number(ano.value)
-
-  var s = 2024 - n1
-  res.innerHTML = `${s}`
-}
-  </script>
 <body>
   <header class="conteudo-cabecalho">
     <h1>Verificador de idade</h1>
@@ -23,9 +13,9 @@
 
   <section class="conteudo-principal">
     <div class="conteudo-dados">
-      <p>Ano de Nascimento: <input type="number" name="n1" id="n1"></p>
-      <p class="sexo">Sexo: <input type="radio">M
-      <input type="radio">F</p>
+      <p>Ano de Nascimento: <input type="number" name="n1"></p>
+      <p class="sexo">Sexo: <input id="sexoF" name="opcao" value="opcao1" type="radio">M
+      <input type="radio" name="opcao" value="opcao2">F</p>
       <input  class="sexo" type="button" value="verificar" onclick="calcular()">
       <div id="res"></div>
     </div>
@@ -39,5 +29,7 @@
   <footer class="conteudo-footer">
     <p>curso em video</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
