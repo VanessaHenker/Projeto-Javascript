@@ -3,10 +3,11 @@ function calcular(){
   var res = window.document.getElementById('res')
   var n1 = Number(ano.value)
 
-  var sexo = window.document.getElementById('sexo')
+  var sexo1= window.document.getElementById('opcao1')
+  var sexo2 = window.document.getElementById('opcao2')
   var txt = String(sexo.value)
 
-  
+  const gn = ["F", "M"];
 
 
   var s = 2024 - n1
