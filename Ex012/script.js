@@ -18,7 +18,19 @@ function calcular(){
   
 
     if (sexoSelecionado == 'M') {
-      res.innerHTML = `Detectamos um homem com ${s} anos`;
+      if(s < 18){
+        res.innerHTML = `Detectamos um menino com ${s} anos`;
+        document.getElementById('minhaImagem').src = 'imagem-menino.webp'
+      }
+      if(s > 18){
+        res.innerHTML = `Detectamos um homem com ${s} anos`;
+        document.getElementById('minhaImagem').src = 'imagem-homem.avif'
+      }
+      if(s >= 60){
+        res.innerHTML = `Detectamos um idoso com ${s} anos`;
+        document.getElementById('minhaImagem').src = 'homem-idoso.jpg'
+      }
+      
     } 
     if (sexoSelecionado == 'F') {
         if(s < 18){
