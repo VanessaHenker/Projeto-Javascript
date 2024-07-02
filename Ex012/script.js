@@ -5,8 +5,7 @@ function calcular(){
 
   
   var s = 2024 - n1
-  res.innerHTML = `Você tem ${s} anos`
-
+ 
   const radios = document.getElementsByName('sexo');
     let sexoSelecionado = '';
     for (const radio of radios) {
@@ -18,12 +17,12 @@ function calcular(){
 
     
 
-    if (sexoSelecionado === 'F') {
-      res.textContent += ' Feminino';
-    } else if (sexoSelecionado === 'M') {
-        res.innerHTML += ' Masculino';
+    if (sexoSelecionado === 'M') {
+      res.textContent = `Detectamos uma mulher com ${s} anos`;
+    } else if (sexoSelecionado === 'F') {
+        res.innerHTML = `Detectamos um homem com ${s} anos`;
     } else {
-      res.innerHTML = 'Sexo não especificado';
+      res.innerHTML = `Você tem ${s} anos, sexo não especificado!`;
     }
 }
 
