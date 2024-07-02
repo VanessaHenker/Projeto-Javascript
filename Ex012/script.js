@@ -15,14 +15,26 @@ function calcular(){
       }
     }
 
-    
+  
 
-    if (sexoSelecionado === 'M') {
-      res.textContent = `Detectamos uma mulher com ${s} anos`;
-    } else if (sexoSelecionado === 'F') {
-        res.innerHTML = `Detectamos um homem com ${s} anos`;
-    } else {
-      res.innerHTML = `Você tem ${s} anos, sexo não especificado!`;
-    }
+    if (sexoSelecionado == 'M') {
+      res.innerHTML = `Detectamos um homem com ${s} anos`;
+    } 
+    if (sexoSelecionado == 'F') {
+        if(s < 18){
+          res.innerHTML = `Detectamos uma menina com ${s} anos`;
+          document.getElementById('minhaImagem').src = 'imagem-menina.avif'
+        }
+        if(s > 18){
+          res.innerHTML = `Detectamos uma mulher com ${s} anos`;
+          document.getElementById('minhaImagem').src = 'imagem-mulher.jpg'
+        }
+        if(s >= 60){
+          res.innerHTML = `Detectamos uma idosa com ${s} anos`;
+          document.getElementById('minhaImagem').src = 'imagem-idosa.png'
+        }
+       
+    } 
+    
 }
 
