@@ -15,8 +15,8 @@ function verificar(){
     var img = document.createElement('img')
     img.setAttribute('id', 'foto')
     
-    //var tam = document.getElementsById('teste')
-    //tam.classList.add('nova-classe')
+    var tam = document.getElementById('conteudo-principal')
+    tam.style.height = '250px'
 
     if(fsex[0].checked){
       genero = 'Homem'
