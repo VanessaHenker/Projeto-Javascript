@@ -1,11 +1,11 @@
 *{
-  padding: 0;
   margin: 0;
-  box-sizing: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
-  background-color: rgb(230, 143, 143);
+  background-color: rgb(250, 207, 207);
 }
 
 .conteudo-cabecalho{
@@ -18,33 +18,37 @@ body{
   background-color: white;
   border-radius: 10px;
   padding: 15px;
-  width: 450px;
+  width: 400px;
   height: 150px;
   margin: auto;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.075);
 }
 
-.conteudo-dados{
-  font-size: 15px;
-  font-weight: 500;
-  padding: 10px;
-}
-
 .sexo{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .button{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .conteudo-escrito{
+  margin-top: 20px;
   text-align: center;
+}
+.conteudo-imagem{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.detalhes-img{
+  width: 150px;
+  height: 130px;
+  border-radius: 100%;
 }
 
 .conteudo-footer{
   color: white;
   text-align: center;
   font-style: italic;
-  margin-top: 10px;
 }
