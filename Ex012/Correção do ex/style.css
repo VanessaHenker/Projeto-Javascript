@@ -23,11 +23,6 @@ body{
   margin: auto;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.075);
 }
-.nova-classe {
-  width: 120px;
-  height: 90px;
-  border-radius: 100%;
-}
 
 .sexo{
   margin-top: 10px;
@@ -58,3 +53,10 @@ body{
   font-style: italic;
 }
 
+.nova-classe {
+  display: flex;
+  margin: auto;
+  width: 120px;
+  height: 90px;
+  border-radius: 100%;
+}
