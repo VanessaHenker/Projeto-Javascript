@@ -15,7 +15,10 @@ function verificar(){
       genero = 'Homem'
       if(idade >=0 && idade < 10){
         //criança
+        //let img = document.getElementById('minhaImagem')
         document.getElementById('minhaImagem').src = 'imagem-menino.webp'
+
+        img.setAttribute('src', 'imagem-menino.webp')
       }
       else if(idade  < 21){
         //jovem
@@ -42,6 +45,6 @@ function verificar(){
     }
     res.style.textAlign = 'center'
     res.innerHTML = `Detectamos ${genero} com ${idade} anos`
-   5 
+    
   }
 }
