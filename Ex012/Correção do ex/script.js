@@ -4,7 +4,7 @@ function verificar(){
   var fano = document.getElementById('txtano')
   var res = document.getElementById('res')
 
-  if(fano.value.lenght == 0 || Number(fano.value) > ano){
+  if(fano.value.lenght == 0 || Number(fano.value) > ano ||  Number(fano.value) < 1900){
     window.alert('Erro, verifique os dados novamente!')
   }
   else{
