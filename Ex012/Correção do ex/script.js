@@ -14,9 +14,9 @@ function verificar(){
 
     var img = document.createElement('img')
     img.setAttribute('id', 'foto')
-
-    var tam = document.getElementsById('conteudo-principal')
-    tam.classList.add('nova-classe')
+    
+    //var tam = document.getElementsById('teste')
+    //tam.classList.add('nova-classe')
 
     if(fsex[0].checked){
       genero = 'Homem'
@@ -25,8 +25,6 @@ function verificar(){
 
        // document.getElementById('minhaImagem').src = 'imagem-menino.webp'
         img.setAttribute('src', 'imagem-menino.webp')
-        img.style.height = '200px'
-        tam.style.height = '300px'
       }
       else if(idade  < 21){
         //jovem
@@ -53,6 +51,7 @@ function verificar(){
     }
     res.style.textAlign = 'center'
     res.innerHTML = `Detectamos ${genero} com ${idade} anos`
+    img.classList.add('nova-classe')
     res.appendChild(img)
   }
 }
