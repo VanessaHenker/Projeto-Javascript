@@ -9,8 +9,8 @@ function calcular(){
   var fim = Number(f.value)
 
   while(ini <= fim){
-    ini = ini + pass
     res.innerHTML += `Passos ${ini}`
+    ini = ini + pass
   }
 }
 
