@@ -35,6 +35,17 @@ body{
   margin-top: 10px;
 }
 
-input > p{
+p > input{
   width: 100px;
+
+}
+
+.button{
+  margin-left: 20px;
+}
+
+.conteudo-footer{
+  color: white;
+  text-align: center;
+  font-style: italic;
 }
