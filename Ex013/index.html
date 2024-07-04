@@ -13,22 +13,24 @@
 
     <section class="conteudo-principal">
       <div class="conteudo">
-      <p class="conteudo-input">
-        Início: <input type="number" name="" id="">
-      </p> 
+        <p class="conteudo-input">
+          Início: <input type="number" id="inicio">
+        </p> 
         
-       <p class="conteudo-input">Fim: <input type="number" name="" id=""></p>
+        <p class="conteudo-input">Fim: <input type="number" id="passos"></p>
 
-       <p class="conteudo-input">Passos: <input type="number" name="" id=""></p> 
-      
-    </div>
+        <p class="conteudo-input">Passos: <input type="number"  id="fim"></p> 
+      </div>
 
-      <input class="button" type="button" value="Contar">
+      <input class="button" type="button" value="Contar" onclick="calcular()">
 
+      <div id="res"></div>
     </section>
 
     <footer class="conteudo-footer">
       <p>Curso em video</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

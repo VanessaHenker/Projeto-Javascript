@@ -21,8 +21,7 @@ var ini = 2
 var fim = 4
 
   var cont = passos
-
-while(fim >= ini){
+while(ini <= fim){
   console.log('Tudo bem?')
   cont++
 }
