@@ -1,23 +1,22 @@
 function calcular(){
-  var i = document.getElementById('inicio')
-  var p = document.getElementById('passos')
-  var f = document.getElementById('fim')
-  var res = document.getElementById('res')
+  let i = document.getElementById('inicio')
+  let p = document.getElementById('passos')
+  let f = document.getElementById('fim')
+  let res = document.getElementById('res')
 
-  var ini = Number(i.value)
-  var pass = Number(p.value)
-  var fim = Number(f.value)
+  let ini = Number(i.value)
+  let pass = Number(p.value)
+  let fim = Number(f.value)
 
-  while(ini <= fim){
-    res.innerHTML += `Passos ${ini}`
-    ini = ini + pass
+  for(let cont = ini; cont <=fim; cont += pass){
+    res.innerHTML += `${cont}`
   }
 }
 
-var ini = 1
+var ini = 2
 var fim = 10
 
-var pass = 1
+var pass = 2
 
 
 while(ini <= fim){
