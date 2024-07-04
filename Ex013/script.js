@@ -4,12 +4,19 @@ function calcular(){
   let f = document.getElementById('fim')
   let res = document.getElementById('res')
 
-  let ini = Number(i.value)
-  let pass = Number(p.value)
-  let fim = Number(f.value)
 
-  for(let cont = ini; cont <=fim; cont += pass){
-    res.innerHTML += `${cont}`
+  if(i.value.length == 0 || p.value.length == 0 || f.value.length){
+    res.innerHTML = 'Erro, faltam dados'
+  }
+  else{
+    let ini = Number(i.value)
+    let pass = Number(p.value)
+    let fim = Number(f.value)
+  
+
+    for(let cont = ini; cont <= fim; cont += pass){
+      res.innerHTML += `${cont}`
+    }
   }
 }
 
