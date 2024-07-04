@@ -3,3 +3,38 @@
   padding: 0;
   box-sizing: 0;
 }
+
+body{
+  background-color: rgb(242, 188, 188);
+}
+
+
+.conteudo-cabecalho{
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.conteudo-principal{
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.075);
+}
+
+.conteudo{
+  text-align:left;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+
+.conteudo-input{
+  margin-top: 10px;
+}
+
+input > p{
+  width: 100px;
+}
