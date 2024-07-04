@@ -8,19 +8,21 @@ function calcular(){
   var pass = Number(p.value)
   var fim = Number(f.value)
 
-  while(ini <= fim){
-    ini = ini + pass
-    res.innerHTML += `Passos ${ini}`
+  var cont = pass
+
+while(ini <= fim){
+    res.innerHTML = `Passos ${ini}`
+    cont++
   }
 }
 
-var ini = 1
-var fim = 10
+var passos = 2
+var ini = 2
+var fim = 4
 
-var pass = 1
 
 
 while(ini <= fim){
-  console.log(ini)
-  ini = ini + pass
-} 
+  console.log('Tudo bem?')
+  passos++
+}
