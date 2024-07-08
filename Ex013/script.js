@@ -18,15 +18,17 @@ let fim =  10
 
 
 function calcular(){
+    res.innerHTML = 'Contando: '
+
     let ini = Number(i.value)
     let pass = Number(p.value)
     let fim = Number(f.value)
-
+    
     while(ini <= fim){
-      res.innerHTML += `${ini}`
-      ini = ini + pass
-    } 
-  
+      res.innerHTML += ` ${ini} `
+      ini += ini + pass
+    }  
+ 
 }
 
 /* var ini = 2
