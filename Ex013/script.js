@@ -1,23 +1,9 @@
-let i = document.getElementById('inicio')
-let p = document.getElementById('passos')
-let f = document.getElementById('fim')
-let res = document.getElementById('res')
+ function calcular(){
+  let i = document.getElementById('inicio')
+  let p = document.getElementById('passos')
+  let f = document.getElementById('fim')
+  let res = document.getElementById('res')
 
-let ini =  2
-let pass = 2
-let fim =  10
-
- /*  res.innerHTML += `${ini}`
-  res.innerHTML += `${pass}`
-  res.innerHTML += `${fim}` */
-
-  while(ini <= fim){
-    res.innerHTML += ` ${ini} `
-    ini = ini + pass
-  } 
-
-
-function calcular(){
     res.innerHTML = 'Contando: '
 
     let ini = Number(i.value)
@@ -26,9 +12,21 @@ function calcular(){
     
     while(ini <= fim){
       res.innerHTML += ` ${ini} `
-      ini += ini + pass
+      ini = ini + pass
     }  
  
+}
+
+function somar(){
+  var a = document.getElementById('teste1')
+  var b = document.getElementById('teste2')
+  
+  var at = Number(a.value)
+  var bt = Number(b.value)
+
+  var s = at + bt
+
+  res.innerHTML = ` ${s} `
 }
 
 /* var ini = 2
