@@ -17,22 +17,23 @@ body{
 .conteudo-principal{
   background-color: white;
   width: 400px;
-  height: 400px;
+  height: 200px;
   margin: auto;
   border-radius: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.075);
 }
 
 .conteudo{
-  text-align:left;
+  text-align:start;
   padding: 20px;
 }
 
-.conteudo-input{
-  margin-top: 10px;
+input{
+  width: 100px;
+  margin-left: 5px;
 }
 
-p > input{
+button{
   width: 100px;
 }
 

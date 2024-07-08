@@ -13,33 +13,18 @@
     let pass = Number(p.value)
     let fim = Number(f.value)
     
-    while(ini <= fim){
-      res.innerHTML += ` ${ini} `
-      ini = ini + pass
-    }  
+    if(pass == 0){
+      pass = 1
+    }
+    if(ini < 0 || pass < 0 || fim < 0){
+      window.alert('Erro, numero negativo')
+    }
+    else{
+      while(ini <= fim){
+        res.innerHTML += ` ${ini} `
+        ini = ini + pass
+      }  
+    }
   }
 }
 
-function somar(){
-  var a = document.getElementById('teste1')
-  var b = document.getElementById('teste2')
-  
-  var at = Number(a.value)
-  var bt = Number(b.value)
-
-  var s = at * bt
-
-  res.innerHTML = ` ${s} `
-}
-
-/* var ini = 2
-var fim = 10
-
-var pass = 2
-
-
-while(ini <= fim){
-  console.log(ini)
-  ini = ini + pass
-} 
- */

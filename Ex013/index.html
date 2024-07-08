@@ -6,9 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Contador</title>
 </head>
-  <script>
-    
-  </script>
+  
 <body>
     <header class="conteudo-cabecalho">
       <h1>Vamos contar</h1>
@@ -16,26 +14,13 @@
 
     <section class="conteudo-principal">
       <div class="conteudo">
-        <p class="conteudo-input">
-          Início: <input type="number" id="inicio">
-        </p> 
-        
-        <p class="conteudo-input">Fim: <input type="number"  id="passos"></p>
-
-        <p class="conteudo-input">Passos: <input type="number"  id="fim"></p> 
+        <p>Início:<input type="number" id="inicio"></p>
+        <p>Passos:<input type="number" id="passos"></p>
+        <p>Fim:<input type="number" id="fim" ></p>
+        <button onclick="calcular()">Calcular</button>
+    
+        <div id="res"></div>  
       </div>
-
-      <div class="button">
-        <input type="button" value="Contar" onclick="calcular()">
-      </div>
-       
-      <div id="res"></div>
-
-      <!-- <div>
-        <input type="number" id="teste1">
-        <input type="number" id="teste2">
-        <input type="button" onclick="somar()">
-      </div> -->
     </section>
 
     <footer class="conteudo-footer">
