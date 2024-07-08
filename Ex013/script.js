@@ -4,8 +4,11 @@
   let f = document.getElementById('fim')
   let res = document.getElementById('res')
 
+  if(i.value.length == 0 || i.value.length == 0 || i.value.length == 0){
+    window.alert('Erro, faltam dados')
+  }
+  else{
     res.innerHTML = 'Contando: '
-
     let ini = Number(i.value)
     let pass = Number(p.value)
     let fim = Number(f.value)
@@ -14,7 +17,7 @@
       res.innerHTML += ` ${ini} `
       ini = ini + pass
     }  
- 
+  }
 }
 
 function somar(){
@@ -24,7 +27,7 @@ function somar(){
   var at = Number(a.value)
   var bt = Number(b.value)
 
-  var s = at + bt
+  var s = at * bt
 
   res.innerHTML = ` ${s} `
 }
