@@ -4,7 +4,7 @@
   let f = document.getElementById('fim')
   let res = document.getElementById('res')
 
-  if(i.value.length == 0 || i.value.length == 0 || i.value.length == 0){
+  if(i.value.length == 0 || p.value.length == 0 || f.value.length == 0){
     window.alert('Erro, faltam dados')
   }
   else{
