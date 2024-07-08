@@ -18,6 +18,9 @@ let fim =  10
 
 
 function calcular(){
+    let ini = Number(i.value)
+    let pass = Number(p.value)
+    let fim = Number(f.value)
 
     while(ini <= fim){
       res.innerHTML += `${ini}`
