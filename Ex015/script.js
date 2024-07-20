@@ -1,5 +1,7 @@
 let v = document.getElementById('num');
 let res = document.getElementById('res');
+let fin = document.getElementById('finalizar');
+let add = document.getElementById('adicionar');
 let valores = [];
 
 function isNumero(n){
