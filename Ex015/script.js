@@ -38,6 +38,9 @@ function adicionar(){
 }
 
 function finalizar(){
+  var tam = document.getElementById('conteudo-principal')
+  tam.style.height = '300px'
+
   if(valores.length == 0){
     window.alert('Adicione valor antes de finalizar!')
   }

@@ -28,9 +28,10 @@ body{
   padding: 20px;
 }
 
-.tabuada{
+.resultado{
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .lista{
