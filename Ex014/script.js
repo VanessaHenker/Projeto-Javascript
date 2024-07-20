@@ -17,27 +17,3 @@ function calcular(){
     }
   }
 }
-
-let num = document.getElementById('num');
-let res = document.getElementById('res');
-let lista = document.getElementById('lista');
-let valores = [];
-
-function isNumber(n) {
-  return Number(n) >= 1 && Number(n) <= 100;
-}
-
-function inLista(n, l) {
-  return l.indexOf(Number(n)) !== -1;
-}
-
-function adicionar() {
-  if (isNumber(num.value) && !inLista(num.value, valores)) {
-    valores.push(Number(num.value));
-    let item = document.createElement('option');
-    item.text = `Valor ${num.value} adicionado!`;
-    lista.appendChild(item); // Corrigido para appendChild
-  } else {
-    window.alert('Valor inválido ou já encontrado na lista!');
-  }
-}
