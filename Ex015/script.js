@@ -1,6 +1,6 @@
-let num = document.getElementById('num')
-let res = document.getElementById('res')
-let fin = document.getElementById('finalizar')
+let num = document.getElementById('num');
+let res = document.getElementById('res');
+let lista = document.getElementById('lista');
 let valores = [];
 
 
@@ -24,9 +24,12 @@ function inlista(n, l){
 }
 function adicionar(){
   if(isNumber(num.value) && !inlista(num.value, valores)){
-    window.alert('tudo ok')
+    valores.push(Number(num.value))
+    let item = document.createElement('option')
+    item.text = `Valor ${num.value} adicionado!`
+    lista.appenChild(item)
   }
   else{
-    window.alert('Valor inválido ou já encontrado na lisra!')
+    window.alert('Valor inválido ou já encontrado na lista!')
   }
 }

@@ -33,6 +33,10 @@ body{
   font-size: 12px;
 }
 
+.lista{
+  width: 150px;
+  margin-top: 10px;
+}
 input{
   width: 100px;
   height: 20px;
