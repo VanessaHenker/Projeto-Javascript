@@ -14,10 +14,16 @@ function isNumber(n){
 }
 
 function inlista(n, l){
+  if(l.indexOf(Number(n)) != -1){
+    return true
+  }
+  else{
+    return false
+  }
 
 }
 function adicionar(){
-  if(isNumber(num.value) && !inlista(num, valores)){
+  if(isNumber(num.value) && !inlista(num.value, valores)){
     window.alert('tudo ok')
   }
   else{
