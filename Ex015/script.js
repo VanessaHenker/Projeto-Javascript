@@ -30,8 +30,11 @@ function adicionar(){
     lista.appendChild(item);
     res.innerHTML = ''
   }
+  else if(inlista(num.value,valores)){
+    window.alert('Valor já encontrado na lista!')
+  }
   else{
-    window.alert('Valor inválido ou já encontrado na lista!')
+    window.alert('Valor inválido!')
   }
   num.value = ''
   num.focus()
@@ -39,18 +42,18 @@ function adicionar(){
 
 function finalizar(){
   var tam = document.getElementById('conteudo-principal')
-  tam.style.height = '300px'
-
+  tam.style.height = '200px'
   if(valores.length == 0){
     window.alert('Adicione valor antes de finalizar!')
   }
   else{
+    tam.style.height = '300px'
     let total = valores.length
     let maior = valores[0]
     let menor = valores[0]
     let soma = 0
     let media = 0
-
+    
     for(let pos in valores){
       soma += valores[pos]
 
