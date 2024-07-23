@@ -73,3 +73,23 @@ function finalizar(){
     res.innerHTML += `<p>A média de todos os valores é ${media}</p>`
   }
 }
+
+import React, { useState } from 'react';
+
+function SimpleCounter() {
+  const [count, setCount] = useState(0);
+
+  const incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <h2>Contador Simples</h2>
+      <p>O contador está em: {count}</p>
+      <button onClick={incrementCount}>Incrementar</button>
+    </div>
+  );
+}
+
+export default SimpleCounter;
