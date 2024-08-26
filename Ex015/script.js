@@ -73,36 +73,4 @@ function finalizar(){
     res.innerHTML += `<p>A média de todos os valores é ${media}</p>`
   }
 }
-
-import React, { useState } from 'react';
-
-function SimpleCounter() {
-  const [count, setCount] = useState(0);
-
-  const incrementCount = () => {
-    setCount(count + 1);
-  };
-
-  return (
-    <div>
-      <h2>Contador Simples</h2>
-      <p>O contador está em: {count}</p>
-      <button onClick={incrementCount}>Incrementar</button>
-    </div>
-  );
-}
-
-export default SimpleCounter;
-
-import React from 'react';
-import TodoList from './TodoList';
-
-function App() {
-  return (
-    <div className="App">
-      <TodoList />
-    </div>
-  );
-}
-
-export default App;
+ 
