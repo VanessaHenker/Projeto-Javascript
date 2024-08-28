@@ -1,10 +1,11 @@
 {
   "name": "projeto-javascript",
   "version": "1.0.0",
-  "description": "Meu projeto em JavaScript",
+  "description": "Um projeto básico em JavaScript",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js"  
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Seu Nome",
   "license": "ISC"
